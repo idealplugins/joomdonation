@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="plugin" group="payment" name="jdonation">
+	<name>os_targetpay</name>
+	<title>Targetpay</title>	
+	<author>Yellow Melon</author>
+	<creationDate>03-07-2013</creationDate>
+	<copyright>Copyright 2013 YellowMelon</copyright>
+	<authorEmail>info@yellowmelon.nl</authorEmail>
+	<authorUrl>www.yellowmelon.nl</authorUrl>
+	<version>1.0</version>
+	<description>Targetpay Payment Plugin For Joom Donation Extension</description>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="tp_rtlo" type="text" size="40" label="RTLO" description="Enter your Targetpay RTLO" default="93929"></field> <!-- // Default TargetPay -->
+				<field name="tp_currency" type="list" label="Currency" description="Select currency" default="EUR">
+					<option value="EUR">Euro</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>			
+	<files>
+		<filename>os_targetpay.php</filename>
+		<filename>targetpay.class.php</filename>
+	</files>
+<!--
+joomDonation isn't able to execute SQL files for now
+	<sql>
+		<file driver="mysql" charset="utf8">targetpay_joomdonation.sql</file>
+	</sql>
+	<installsql>
+		<file driver="mysql" charset="utf8">targetpay_joomdonation.sql</file>
+	</installsql>
+-->
+	<installfile />
+</install>
