@@ -220,7 +220,7 @@ class os_targetpay extends os_payment {
 		$TargetPayCore = new TargetPayCore($targetInfo->paymethod,$targetInfo->rtlo,$this->getParam('appId'));
 		$TargetPayCore->checkPayment($targetInfo->transaction_id);
 		if(!$TargetPayCore->getPaidStatus()) {
-			echo "Not paid " . $TargetPayCore->getErrorMessage(). "... (JoomDonation, 23-04-2015)";
+			echo "Not paid " . $TargetPayCore->getErrorMessage(). "... (JoomDonation, 23-04-2015) ";			
 			die();
 		}
 		
