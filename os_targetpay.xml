@@ -2,11 +2,11 @@
 <install version="1.0" type="plugin" group="payment" name="jdonation">
 	<name>os_targetpay</name>
 	<title>Targetpay</title>	
-	<author>Yellow Melon</author>
+	<author>Targetpay</author>
 	<creationDate>03-07-2013</creationDate>
-	<copyright>Copyright 2013 YellowMelon</copyright>
-	<authorEmail>info@yellowmelon.nl</authorEmail>
-	<authorUrl>www.yellowmelon.nl</authorUrl>
+	<copyright>Copyright 2013 Targetpay</copyright>
+	<authorEmail>plugins@targetmedia.nl</authorEmail>
+	<authorUrl>www.targetpay.com</authorUrl>
 	<version>1.0</version>
 	<description>Targetpay Payment Plugin For Joom Donation Extension</description>	
 	<config>
